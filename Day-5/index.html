@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Day 5</title>
+    <style>
+      * {
+        border: 2px solid black;
+        padding: 0;
+        margin: 0;
+        font-family: cursive;
+      }
+      p {
+        color: blue;
+        background-color: beige;
+      }
+      .bg-red {
+        background-color: red;
+      }
+      .col-white {
+        color: white;
+      }
+
+      #top-cnt {
+        border: 5px solid blue;
+      }
+    </style>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="top-cnt">
+      <!-- Selectors 
+    styling types  -->
+      <h2 class="bg-red col-white" style="color: green; font-size: 24px">
+        Testing inline styling..
+      </h2>
+      <label
+        class="bg-red"
+        style="
+          color: red;
+          font-size: 24px;
+          font-weight: bold;
+          background-color: aqua;
+        "
+        >This is an inline tag.</label
+      >
+      <p class="col-white">Testing internal Styling</p>
+      <p>Testing internal Styling</p>
+      <p class="bg-red col-white">Testing internal Styling</p>
+      <h1 class="ext-class">Testing external style</h1>
+    </div>
+  </body>
+</html>
