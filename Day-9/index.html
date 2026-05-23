@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9</title>
+    <style>
+      .container {
+        display: flex;
+        height: 100vh;
+        border: 10px solid blue;
+        /* flex-direction: row;
+        flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse; */
+        /* justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: center; */
+        /* justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+        align-items: stretch;
+        /* height is neeeded */
+        align-items: center;
+        align-items: flex-start;
+        align-items: flex-end;
+        align-items: baseline;
+      }
+      .container > div {
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+      }
+
+      .products {
+        border: 2px solid red;
+        height: 3000px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse; */
+        justify-content: space-around;
+        /* gap: 30px; */
+        /* align-content: center; */
+      }
+      .child {
+        border: 2px solid black;
+        height: 300px;
+        width: 18%;
+        margin-bottom: 20px;
+        border-radius: 20px;
+      }
+      .child:nth-child(2) {
+        background-color: red;
+        align-self: center;
+      }
+      .child:first-child {
+        background-color: blue;
+      }
+      .child:last-child {
+        background-color: green;
+      }
+      .imgStyle {
+        height: 80%;
+        width: 100%;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div> -->
+
+    <!-- <div
+      style="
+        border: 10px solid black;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1>Hi</h1>
+    </div> -->
+
+    <div class="products">
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+      <div class="child">
+        <img class="imgStyle" src="../images/mens_tshirt.webp" />
+        <h4>Product 1</h4>
+      </div>
+    </div>
+  </body>
+</html>
