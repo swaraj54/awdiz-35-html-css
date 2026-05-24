@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .growContainer {
+        border: 2px solid black;
+        display: flex;
+      }
+      .growContainer div {
+        border: 2px solid red;
+        flex-grow: 1;
+      }
+      .growContainer div:nth-child(2) {
+        flex-grow: 5;
+      }
+      .shrinkContainer {
+        border: 2px solid black;
+        display: flex;
+      }
+      .shrinkContainer div {
+        border: 2px solid red;
+        /* width: 400px; */
+        flex-shrink: 1;
+        flex-basis: 400px;
+      }
+      .shrinkContainer div:nth-child(2) {
+        flex-shrink: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="growContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div> -->
+
+    <div class="shrinkContainer">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
