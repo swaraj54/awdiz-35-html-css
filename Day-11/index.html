@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 11</title>
+    <style>
+      /* 601 -> 800px */
+      h1 {
+        color: white;
+        background-color: black;
+        font-size: 18px;
+      }
+      /* 0px -> 600px  */
+      @media (max-width: 600px) {
+        h1 {
+          background-color: red;
+          font-size: 44px;
+        }
+      }
+      /* 801 -> infinity */
+      @media (min-width: 800px) {
+        h1 {
+          background-color: green;
+          font-size: 62px;
+          border: 15px solid blue;
+        }
+      }
+      /* 900px - > 1200px */
+      @media (min-width: 900px) and (max-width: 1200px) {
+        h1 {
+          background-color: purple;
+          font-size: 62px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Testing max and min width</h1>
+  </body>
+</html>
