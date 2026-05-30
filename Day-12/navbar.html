@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      #screen {
+        /* height: 100vh; */
+        width: 100%;
+        border: 12px solid blue;
+      }
+      #navCnt {
+        height: 70px;
+        width: 100%;
+        background-color: lightblue;
+      }
+      #navCnt > div {
+        display: flex;
+        justify-content: space-between;
+        width: 92%;
+        height: 100%;
+        /* border: 2px solid red; */
+        margin: auto;
+        align-items: center;
+      }
+      /* #navCnt > div div {
+        border: 2px solid red;
+      } */
+      #naviCnt {
+        display: flex;
+        gap: 50px;
+        /* justify-content: space-between; */
+      }
+      #menuIcon {
+        display: none;
+      }
+      #bodyCnt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      #bodyCnt > div {
+        height: 350px;
+        width: 23%;
+        border: 2px solid red;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 500px) {
+        h4 {
+          font-size: 16px;
+        }
+        #naviCnt {
+          border: 2px solid red;
+          display: none;
+        }
+        #menuIcon {
+          display: block;
+        }
+        #bodyCnt > div {
+          width: 48%;
+          background-color: lightgray;
+        }
+      }
+      @media (min-width: 501px) and (max-width: 770px) {
+        #decoreNavi,
+        #kidsNavi,
+        #homeNavi {
+          display: none;
+        }
+
+        #menuIcon {
+          display: block;
+        }
+        #bodyCnt > div {
+          width: 32%;
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screen">
+      <div id="navCnt">
+        <div>
+          <div id="menuIcon">
+            <span class="material-symbols-outlined"> menu </span>
+          </div>
+          <div><h4>Logo</h4></div>
+          <div id="naviCnt">
+            <h4>Men</h4>
+            <h4>Women</h4>
+            <h4 id="kidsNavi">Kids</h4>
+            <h4 id="homeNavi">Home</h4>
+            <h4 id="decoreNavi">Decore</h4>
+          </div>
+          <div><h4>Profile</h4></div>
+        </div>
+      </div>
+      <div id="bodyCnt">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+      </div>
+    </div>
+  </body>
+</html>
