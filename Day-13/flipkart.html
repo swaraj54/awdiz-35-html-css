@@ -17,7 +17,7 @@
       }
       #screen {
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
         border: 5px solid blue;
       }
       #navBodyCnt {
@@ -116,6 +116,51 @@
       #bottomNavCnt > div p {
         font-size: 12px;
         font-weight: bold;
+      }
+
+      #sliderCnt {
+        width: 100%;
+        /* border: 2px solid orange; */
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .sliderImageCnt {
+        width: 32%;
+        height: 200px;
+      }
+      .imgStyle {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+      }
+
+      .commonCnt {
+        /* border: 2px solid red; */
+        width: 100%;
+        border-radius: 20px;
+        margin: 10px 0;
+        background: linear-gradient(to bottom, #ef0d0d, #f58787);
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+      .commonCnt h3 {
+        margin: 10px 10px;
+        color : white;
+      }
+      .productGridCnt {
+        background-color: white;
+        width: 96%;
+        margin: 10px auto;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .productGridItem {
+        height: 200px;
+        width: 25%;
+        padding: 10px;
+        /* border : 1px solid black */
       }
     </style>
   </head>
@@ -243,6 +288,112 @@
               src="https://static-assets-web.flixcart.com/apex-static/images/svgs/L1Nav/all.svg"
             />
             <p>For You</p>
+          </div>
+        </div>
+        <div id="sliderCnt">
+          <div class="sliderImageCnt">
+            <img
+              class="imgStyle"
+              src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/f7196910779565e6.png?q=60"
+            />
+          </div>
+          <div class="sliderImageCnt">
+            <img
+              class="imgStyle"
+              src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/97eb1680c9134977.jpg?q=60"
+            />
+          </div>
+          <div class="sliderImageCnt">
+            <img
+              class="imgStyle"
+              src="https://rukminim2.flixcart.com/fk-p-flap/3200/1560/image/cdc1b99c06290783.jpg?q=60"
+            />
+          </div>
+        </div>
+        <div class="commonCnt">
+          <h3>People also viewed</h3>
+          <div class="productGridCnt">
+            <div class="productGridItem">
+              <img
+                class="imgStyle"
+                style="height: 70%"
+                src="https://rukminim2.flixcart.com/image/280/374/xif0q/shirt/g/y/h/xl-pop-bruxen-clinch-fashion-original-imah4gs2q7wb4gtg.jpeg?q=90"
+              />
+              <p>Classic Tee</p>
+              <h6>Min 70% off</h6>
+            </div>
+            <div class="productGridItem">
+              <img
+                class="imgStyle"
+                style="height: 70%"
+                src="https://rukminim2.flixcart.com/image/280/374/xif0q/shirt/g/y/h/xl-pop-bruxen-clinch-fashion-original-imah4gs2q7wb4gtg.jpeg?q=90"
+              />
+              <p>Classic Tee</p>
+              <h6>Min 70% off</h6>
+            </div>
+            <div class="productGridItem">
+              <img
+                class="imgStyle"
+                style="height: 70%"
+                src="https://rukminim2.flixcart.com/image/280/374/xif0q/shirt/g/y/h/xl-pop-bruxen-clinch-fashion-original-imah4gs2q7wb4gtg.jpeg?q=90"
+              />
+              <p>Classic Tee</p>
+              <h6>Min 70% off</h6>
+            </div>
+            <div class="productGridItem">
+              <img
+                class="imgStyle"
+                style="height: 70%"
+                src="https://rukminim2.flixcart.com/image/280/374/xif0q/shirt/g/y/h/xl-pop-bruxen-clinch-fashion-original-imah4gs2q7wb4gtg.jpeg?q=90"
+              />
+              <p>Classic Tee</p>
+              <h6>Min 70% off</h6>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="commonCnt"
+          style="background: linear-gradient(to bottom, #0d9ef5, #87bff5)"
+        >
+          <h3>People also viewed</h3>
+          <div class="productGridCnt">
+            <div class="productGridItem">
+              <img
+                class="imgStyle"
+                style="height: 70%"
+                src="https://rukminim2.flixcart.com/image/280/374/xif0q/shirt/g/y/h/xl-pop-bruxen-clinch-fashion-original-imah4gs2q7wb4gtg.jpeg?q=90"
+              />
+              <p>Classic Tee</p>
+              <h6>Min 70% off</h6>
+            </div>
+            <div class="productGridItem">
+              <img
+                class="imgStyle"
+                style="height: 70%"
+                src="https://rukminim2.flixcart.com/image/280/374/xif0q/shirt/g/y/h/xl-pop-bruxen-clinch-fashion-original-imah4gs2q7wb4gtg.jpeg?q=90"
+              />
+              <p>Classic Tee</p>
+              <h6>Min 70% off</h6>
+            </div>
+            <div class="productGridItem">
+              <img
+                class="imgStyle"
+                style="height: 70%"
+                src="https://rukminim2.flixcart.com/image/280/374/xif0q/shirt/g/y/h/xl-pop-bruxen-clinch-fashion-original-imah4gs2q7wb4gtg.jpeg?q=90"
+              />
+              <p>Classic Tee</p>
+              <h6>Min 70% off</h6>
+            </div>
+            <div class="productGridItem">
+              <img
+                class="imgStyle"
+                style="height: 70%"
+                src="https://rukminim2.flixcart.com/image/280/374/xif0q/shirt/g/y/h/xl-pop-bruxen-clinch-fashion-original-imah4gs2q7wb4gtg.jpeg?q=90"
+              />
+              <p>Classic Tee</p>
+              <h6>Min 70% off</h6>
+            </div>
           </div>
         </div>
       </div>
